@@ -55,7 +55,7 @@ My projects look at how to spot suspicious activity and make the results easier 
 |---|---|---|
 | [Workflow Injection Guard](https://github.com/MatthewJunkins445/workflow-injection-guard)<br><sub>Application security</sub> | Flags risky GitHub Actions patterns on the lines a pull request changes, using custom Semgrep rules with test fixtures and end-to-end checks. | GitHub Actions + Semgrep + Python |
 | [L.O.G.S.](https://github.com/MatthewJunkins445/L.O.G.S.)<br><sub>Network monitoring</sub> | A desktop dashboard that shows network exposure, firewall findings, and live traffic alerts in one place. | React + Tauri + FastAPI + Python |
-| Network Security Policy Simulator<br><sub>Team capstone</sub> | A prototype for testing firewall policies and visualizing their effects. | Network simulation + Policy testing |
+| [MCP Gateway](https://github.com/MatthewJunkins445/mcp-gateway)<br><sub>AI security</sub> | A local proxy between an AI agent and its MCP servers that only exposes approved tools whose definitions match a lock file. | Python + MCP SDK |
 
 ## Detection Engineering
 
