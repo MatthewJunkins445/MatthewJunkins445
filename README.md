@@ -89,4 +89,3 @@ Trying to learn more about Cybersecurity and Software Security. My projects look
 ## Connect
 - [LinkedIn](https://www.linkedin.com/in/matthew-junkins-21809b268)
 - [Email](mailto:mjunkins445@gmail.com)
-- [GitHub](https://github.com/MatthewJunkins445?tab=repositories)
