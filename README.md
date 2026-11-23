@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/u/293958700?v=4" width="136" height="136" alt="Matthew Junkins’s GitHub avatar" />
+  <img src="./assets/profile-header.svg" width="880" alt="" />
 </p>
 
 <h1 align="center">Matthew Junkins</h1>
 
-<p align="center"><strong>I build tools that help people spot suspicious activity and understand what happened.</strong></p>
+<p align="center"><strong>I build tools for security monitoring, detection engineering, and AI evaluation.</strong></p>
 
 <p align="center">
   <a href="#detection-engineering"><img src="https://img.shields.io/badge/Detection%20Engineering-0E7490?style=for-the-badge" alt="Jump to Detection Engineering" /></a>
@@ -18,9 +18,10 @@
 
 ## About
 
-- **PC Technician at Dominion Energy.** I image Windows devices, troubleshoot endpoint and connectivity issues, and write practical guides for coworkers using internal AI tools.
-- **B.S. in Cyber Security and Networking, Shepherd University.** For my capstone, I worked with a team to prototype a simulator for testing firewall policies and visualizing network activity.
-- **AI evaluation experience.** I’ve assessed AI-generated code changes, test logs, and reasoning for correctness.
+I’m a PC technician at Dominion Energy and a Cyber Security and Networking graduate from Shepherd University. I troubleshoot Windows and network issues, and write guides that help coworkers use internal AI tools.
+
+My projects look at how to spot suspicious activity and make the results easier to investigate. I also evaluate AI-generated code and reasoning by comparing the model’s claims with the test output and the code changes.
+
 
 ## Toolbox
 
@@ -46,9 +47,9 @@
 
 | Project | What it does | Stack |
 | --- | --- | --- |
-| **[Workflow Injection Guard](https://github.com/MatthewJunkins445/workflow-injection-guard)** | Reviews changes to GitHub Actions workflows in pull requests and flags risky patterns. It uses changed-line filtering to keep findings focused on the PR. | GitHub Actions · Semgrep · Python |
-| **[L.O.G.S.](https://github.com/MatthewJunkins445/L.O.G.S.)** | Desktop dashboard for network exposure, firewall findings, and live traffic anomaly alerts. | React · Tauri · Python · FastAPI |
-| **Network Security Policy Simulator** | Team capstone prototype for testing network policies and visualizing the effects of firewall rules. | Network simulation · Policy testing |
+| **[Workflow Injection Guard](https://github.com/MatthewJunkins445/workflow-injection-guard)** | Flags risky GitHub Actions patterns on lines changed by a pull request. | GitHub Actions · Semgrep · Python |
+| **[L.O.G.S.](https://github.com/MatthewJunkins445/L.O.G.S.)** | Shows network exposure, firewall findings, and live traffic alerts in a desktop dashboard. | React · Tauri · Python · FastAPI |
+| **Network Security Policy Simulator** | Team capstone prototype for testing firewall policies and visualizing their effects. | Network simulation · Policy testing |
 
 ### Detection Engineering
 
@@ -62,10 +63,11 @@
 
 ### AI Evaluation
 
-I’ve reviewed model-generated code, test output, and reasoning to identify incorrect behavior and unsupported conclusions. I also write practical guides that help coworkers understand where internal AI tools are useful and what to verify before relying on their outputs.
+I review generated code, test output, and reasoning to identify incorrect behavior and unsupported conclusions.
+
 
 ## Connect
 
 [GitHub repositories](https://github.com/MatthewJunkins445?tab=repositories) · [Contribution activity](https://github.com/MatthewJunkins445?tab=overview)
 
-<!-- Optional profile additions: LinkedIn or portfolio URL, a custom portrait, and a 3D contribution chart. -->
+<!-- Optional profile additions: LinkedIn or portfolio URL and a 3D contribution chart. -->
