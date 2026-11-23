@@ -4,70 +4,81 @@
 
 <h1 align="center">Matthew Junkins</h1>
 
-<p align="center"><strong>I build tools for security monitoring, detection engineering, and AI evaluation.</strong></p>
-
 <p align="center">
-  <a href="#detection-engineering"><img src="https://img.shields.io/badge/Detection%20Engineering-0E7490?style=for-the-badge" alt="Jump to Detection Engineering" /></a>
-  <a href="#application-security"><img src="https://img.shields.io/badge/Application%20Security-4338CA?style=for-the-badge" alt="Jump to Application Security" /></a>
-  <a href="#ai-evaluation"><img src="https://img.shields.io/badge/AI%20Evaluation-6D28D9?style=for-the-badge" alt="Jump to AI Evaluation" /></a>
+  <em>I build tools for security monitoring, detection engineering, and AI evaluation.</em>
 </p>
 
 <p align="center">
-  <a href="#toolbox">Toolbox</a> · <a href="#featured-projects">Featured Projects</a> · <a href="#connect">Connect</a>
+  <img src="https://img.shields.io/badge/B.S.%20Cyber%20Security-Shepherd%20'26-0E7490?style=for-the-badge" alt="B.S. Cyber Security, Shepherd University 2026" />
+  <img src="https://img.shields.io/badge/Workstations%20Deployed-85%2B-4338CA?style=for-the-badge" alt="85+ workstations deployed" />
+  <img src="https://img.shields.io/badge/Open%20to-SOC%20%C2%B7%20Detection%20%C2%B7%20AI%20Security-6D28D9?style=for-the-badge" alt="Open to SOC, detection, and AI security roles" />
 </p>
 
 ## About
-
-I’m a PC technician at Dominion Energy and a Cyber Security and Networking graduate from Shepherd University. I troubleshoot Windows and network issues, and write guides that help coworkers use internal AI tools.
-
-My projects look at how to spot suspicious activity and make the results easier to investigate. I also evaluate AI-generated code and reasoning by comparing the model’s claims with the test output and the code changes.
-
+- 🛠️ **PC Technician** @ *Dominion Energy*: Windows, network, and hardware troubleshooting; imaged and patched 85+ workstations in two weeks
+- 🤖 **AI Trainer & Model Evaluator** @ *DataAnnotation*: red-team AI models with prompt injection and jailbreak techniques, and check model claims against tests and code changes
+- 🎓 **B.S. Cyber Security & Networking** @ *Shepherd University* (May 2026)
+- 🔍 Building Splunk detections mapped to **MITRE ATT&CK** and security tooling for GitHub Actions
+- 📍 West Virginia · open to remote, hybrid, or relocation
 
 ## Toolbox
-
 **Languages**
-
-![Python, PowerShell, JavaScript, and Java](https://skillicons.dev/icons?i=py,powershell,js,java)
+<p>
+  <img src="https://skillicons.dev/icons?i=py,powershell,js,java,bash" alt="Python, PowerShell, JavaScript, Java, Bash" />
+</p>
 
 **Frameworks & Libraries**
-
-![React, FastAPI, and Tauri](https://skillicons.dev/icons?i=react,fastapi,tauri)
+<p>
+  <img src="https://skillicons.dev/icons?i=react,fastapi,tauri" alt="React, FastAPI, Tauri" />
+</p>
 
 **Cloud & DevOps**
+<p>
+  <img src="https://skillicons.dev/icons?i=aws,azure,docker,githubactions" alt="AWS, Azure, Docker, GitHub Actions" />
+</p>
 
-![Git, GitHub Actions, Docker, AWS, and Azure](https://skillicons.dev/icons?i=git,githubactions,docker,aws,azure)
+**Systems**
+<p>
+  <img src="https://skillicons.dev/icons?i=windows,linux,git,github,vscode" alt="Windows, Linux, Git, GitHub, VS Code" />
+</p>
 
-**Systems & Security**
-
-![Windows and Linux](https://skillicons.dev/icons?i=windows,linux)
-
-`Splunk` · `Sysmon` · `Wazuh` · `Snort` · `Wireshark` · `Semgrep`
+**Security**
+<p>
+  <img src="https://img.shields.io/badge/Splunk-000000?style=for-the-badge&logo=splunk&logoColor=white" alt="Splunk" />
+  <img src="https://img.shields.io/badge/Sysmon-0078D4?style=for-the-badge" alt="Sysmon" />
+  <img src="https://img.shields.io/badge/Wazuh-1E40AF?style=for-the-badge&logo=wazuh&logoColor=white" alt="Wazuh" />
+  <img src="https://img.shields.io/badge/Snort-B91C1C?style=for-the-badge" alt="Snort" />
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/Semgrep-0E7490?style=for-the-badge&logo=semgrep&logoColor=white" alt="Semgrep" />
+  <img src="https://img.shields.io/badge/MITRE%20ATT%26CK-7F1D1D?style=for-the-badge" alt="MITRE ATT&CK" />
+</p>
 
 ## Featured Projects
+| Project | What it is | Stack |
+|---|---|---|
+| [Workflow Injection Guard](https://github.com/MatthewJunkins445/workflow-injection-guard)<br><sub>Application security</sub> | Flags risky GitHub Actions patterns on the lines a pull request changes, using custom Semgrep rules with test fixtures and end-to-end checks. | GitHub Actions + Semgrep + Python |
+| [L.O.G.S.](https://github.com/MatthewJunkins445/L.O.G.S.)<br><sub>Network monitoring</sub> | A desktop dashboard that shows network exposure, firewall findings, and live traffic alerts in one place. | React + Tauri + FastAPI + Python |
+| Network Security Policy Simulator<br><sub>Team capstone</sub> | A prototype for testing firewall policies and visualizing their effects. | Network simulation + Policy testing |
 
-| Project | What it does | Stack |
-| --- | --- | --- |
-| **[Workflow Injection Guard](https://github.com/MatthewJunkins445/workflow-injection-guard)** | Flags risky GitHub Actions patterns on lines changed by a pull request. | GitHub Actions · Semgrep · Python |
-| **[L.O.G.S.](https://github.com/MatthewJunkins445/L.O.G.S.)** | Shows network exposure, firewall findings, and live traffic alerts in a desktop dashboard. | React · Tauri · Python · FastAPI |
-| **Network Security Policy Simulator** | Team capstone prototype for testing firewall policies and visualizing their effects. | Network simulation · Policy testing |
+## Detections
+| Detection | Data source | ATT&CK |
+|---|---|---|
+| Suspicious PowerShell execution | Sysmon → Splunk | [T1059.001](https://attack.mitre.org/techniques/T1059/001/) |
+| SSH brute-force attempts | SSH auth logs → Splunk | [T1110](https://attack.mitre.org/techniques/T1110/) |
+| Network anomaly alerts | Live traffic → [L.O.G.S.](https://github.com/MatthewJunkins445/L.O.G.S.) | — |
 
-### Detection Engineering
-
-- **PowerShell detection.** Used Sysmon events and Splunk searches to investigate suspicious PowerShell activity.
-- **SSH brute-force detection.** Built Splunk searches to identify repeated SSH login failures.
-- **Network monitoring.** Built a desktop dashboard that combines traffic monitoring with anomaly alerts. [Explore L.O.G.S.](https://github.com/MatthewJunkins445/L.O.G.S.)
-
-### Application Security
-
-[Workflow Injection Guard](https://github.com/MatthewJunkins445/workflow-injection-guard) applies custom Semgrep rules to GitHub Actions changes. The project includes rule fixtures and end-to-end checks for how findings appear in pull requests.
-
-### AI Evaluation
-
-I review generated code, test output, and reasoning to identify incorrect behavior and unsupported conclusions.
-
+## 3D Commit History
+<!--
+  Regenerated daily by .github/workflows/profile-3d.yml.
+  Colors live in .github/profile-3d-settings.json (cyan -> violet, with a dark-mode palette).
+-->
+<p align="center">
+  <img src="./profile-3d-contrib/profile-cyan-violet.svg" width="900" alt="Isometric 3D graph of my GitHub contribution history" />
+</p>
 
 ## Connect
-
-[GitHub repositories](https://github.com/MatthewJunkins445?tab=repositories) · [Contribution activity](https://github.com/MatthewJunkins445?tab=overview)
-
-<!-- Optional profile additions: LinkedIn or portfolio URL and a 3D contribution chart. -->
+<p>
+  <a href="https://www.linkedin.com/in/matthew-junkins-21809b268"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:mjunkins445@gmail.com"><img src="https://img.shields.io/badge/Email-mjunkins445%40gmail.com-1F2937?style=for-the-badge&logo=gmail&logoColor=white" alt="Email mjunkins445@gmail.com" /></a>
+  <a href="https://github.com/MatthewJunkins445?tab=repositories"><img src="https://img.shields.io/badge/GitHub-@MatthewJunkins445-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+</p>
