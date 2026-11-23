@@ -11,33 +11,27 @@ On my own time I build ways to spot suspicious activity and make it easier to in
 
 I'm looking for entry-level roles in security operations, detection engineering, and AI evaluation. Reach me on [LinkedIn](https://www.linkedin.com/in/matthew-junkins-21809b268) or by [email](mailto:mjunkins445@gmail.com).
 
-## Projects
+## Tools and pinned projects
 
-### [Workflow Injection Guard](https://github.com/MatthewJunkins445/workflow-injection-guard)
-Flags risky GitHub Actions patterns on the lines a pull request changes, using custom Semgrep rules backed by test fixtures and end-to-end checks.<br>
-<sub>Built with GitHub Actions, Semgrep, and Python</sub>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/tools-dark.svg">
+  <img src="./assets/tools-light.svg" width="793" alt="Tools I use, grouped by area. Security: Splunk, Sysmon, Wazuh, Snort, Wireshark, MITRE ATT&CK, Semgrep. Languages: Python, PowerShell, JavaScript, Java, Bash. Frameworks: React, FastAPI, Tauri. Cloud and DevOps: AWS, Azure, Docker, Git, GitHub Actions. Systems: Windows, Linux, VS Code. Highlighted: Semgrep and GitHub Actions in Workflow Injection Guard; Python in all pinned projects; React, FastAPI, and Tauri in L.O.G.S.">
+</picture>
 
-### [L.O.G.S.](https://github.com/MatthewJunkins445/L.O.G.S.)
-A desktop dashboard that puts network exposure, firewall findings, and live traffic alerts in one place.<br>
-<sub>Built with React, Tauri, FastAPI, and Python</sub>
+<p>
+<a href="https://github.com/MatthewJunkins445/workflow-injection-guard"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pin-wig-dark.svg"><img src="./assets/pin-wig-light.svg" width="258" alt="Workflow Injection Guard: Flags risky GitHub Actions patterns on the lines a pull request changes. Built with Semgrep, GitHub Actions, Python."></picture></a>
+<a href="https://github.com/MatthewJunkins445/L.O.G.S."><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pin-logs-dark.svg"><img src="./assets/pin-logs-light.svg" width="258" alt="L.O.G.S.: A desktop dashboard for network exposure, firewall findings, and live traffic alerts. Built with React, Tauri, FastAPI, Python."></picture></a>
+<a href="https://github.com/MatthewJunkins445/mcp-gateway"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pin-mcp-dark.svg"><img src="./assets/pin-mcp-light.svg" width="258" alt="MCP Gateway: A local MCP proxy that only exposes approved tools whose definitions match a lock file. Built with Python."></picture></a>
+</p>
 
-### Network Security Policy Simulator
-A team capstone prototype for testing firewall policies and visualizing their effects.<br>
-<sub>Network simulation and policy testing</sub>
+I also worked on a team capstone, a Network Security Policy Simulator for testing firewall policies and visualizing their effects.
 
 ## Detections
 
-These are the highlighted squares in the matrix above.
+These are the highlighted squares in the header.
 
 | Detection | Data source | ATT&CK |
 |---|---|---|
 | Suspicious PowerShell execution | Sysmon → Splunk | [T1059.001](https://attack.mitre.org/techniques/T1059/001/) |
 | SSH brute-force attempts | SSH auth logs → Splunk | [T1110](https://attack.mitre.org/techniques/T1110/) |
 | Network anomaly alerts | Live traffic → [L.O.G.S.](https://github.com/MatthewJunkins445/L.O.G.S.) | Not mapped |
-
-## Tools
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/tools-dark.svg">
-  <img src="./assets/tools-light.svg" width="793" alt="Tools I use. Security: Splunk, Sysmon, Semgrep, Wazuh, Snort, Wireshark, MITRE ATT&CK. Languages: Python, PowerShell, JavaScript, Java, Bash. Frameworks: React, FastAPI, Tauri. Cloud and DevOps: AWS, Azure, Docker, GitHub Actions. Systems: Windows, Linux, Git, VS Code. Highlighted tools are used in a project or detection on this page.">
-</picture>
