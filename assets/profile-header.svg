@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="116" viewBox="0 0 880 116" role="img" aria-labelledby="title">
+  <title id="title">An abstract signal trace on a blue and violet grid</title>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#071426"/>
+      <stop offset="1" stop-color="#201641"/>
+    </linearGradient>
+    <linearGradient id="signal">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="0.55" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#c4b5fd"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#8298d6" stroke-opacity=".19"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect x="1" y="1" width="878" height="114" rx="15"/>
+    </clipPath>
+  </defs>
+  <style>
+    .sweep { opacity: 0; }
+    @media (prefers-reduced-motion: no-preference) {
+      .sweep { animation: sweep 4.4s ease-in-out both; }
+      .beacon { animation: beacon 1.45s ease-out 3; transform-box: fill-box; transform-origin: center; }
+    }
+    @keyframes sweep {
+      0% { opacity: 0; transform: translateX(-48px); }
+      16%, 82% { opacity: .22; }
+      100% { opacity: 0; transform: translateX(880px); }
+    }
+    @keyframes beacon {
+      0%, 100% { opacity: .45; transform: scale(1); }
+      55% { opacity: .14; transform: scale(1.8); }
+    }
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="880" height="116" fill="url(#background)"/>
+    <rect width="880" height="116" fill="url(#grid)"/>
+    <path d="M0 58H880" stroke="#526488" stroke-opacity=".32" stroke-dasharray="3 8"/>
+    <path d="M40 76H170L195 53H285L308 76H382L408 37L431 83L453 58H535L568 42H652L675 62H840"
+          fill="none" stroke="url(#signal)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="sweep" fill="#93eafe">
+      <rect x="0" width="48" height="116" opacity=".28"/>
+      <path d="M48 0H49V116H48Z"/>
+    </g>
+    <circle class="beacon" cx="408" cy="37" r="9" fill="none" stroke="#7dd3fc" opacity=".45"/>
+    <circle cx="408" cy="37" r="3.5" fill="#e0f2fe"/>
+    <circle cx="195" cy="53" r="3" fill="#67e8f9"/>
+    <circle cx="652" cy="42" r="3" fill="#c4b5fd"/>
+  </g>
+  <rect x="1" y="1" width="878" height="114" rx="15" fill="none" stroke="#6675ac" stroke-opacity=".55"/>
+</svg>
