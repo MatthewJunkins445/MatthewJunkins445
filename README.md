@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./assets/profile-header.svg" width="880" alt="" />
-</p>
-
 <h1 align="center">Matthew Junkins</h1>
 
 <p align="center"><strong>I build tools for security monitoring, detection engineering, and AI evaluation.</strong></p>
