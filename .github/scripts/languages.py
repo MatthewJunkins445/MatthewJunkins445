@@ -14,7 +14,7 @@ import sys
 import urllib.request
 
 OUT = "profile-3d-contrib/languages.svg"
-GRAPH = "profile-3d-contrib/profile-cyan-violet.svg"
+GRAPH = "profile-3d-contrib/profile-3d.svg"
 
 # GitHub linguist colors, so slices match the language pie in the 3D graph.
 COLORS = {

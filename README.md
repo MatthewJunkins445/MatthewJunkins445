@@ -75,7 +75,7 @@ Trying to learn more about Cybersecurity and Software Security. My projects look
   The languages chart is built by .github/scripts/languages.py in the same workflow.
 -->
 <p align="center">
-  <img src="./profile-3d-contrib/profile-cyan-violet.svg" width="900" alt="Isometric 3D graph of my GitHub contribution history" />
+  <img src="./profile-3d-contrib/profile-3d.svg" width="900" alt="Isometric 3D graph of my GitHub contribution history" />
 </p>
 <p align="center">
 </p>
