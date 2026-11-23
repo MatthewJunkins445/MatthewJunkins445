@@ -3,30 +3,30 @@
   "fileName": "profile-cyan-violet.svg",
   "backgroundColor": "#ffffff",
   "foregroundColor": "#1F2328",
-  "strongColor": "#9A6700",
+  "strongColor": "#0969DA",
   "weakColor": "#59636E",
-  "radarColor": "#BF8700",
+  "radarColor": "#0969DA",
   "growingAnimation": true,
   "contribColors": [
     "#D8DEE4",
-    "#F5E0A3",
-    "#E3B341",
-    "#BF8700",
-    "#7D5600"
+    "#B6E3FF",
+    "#54AEFF",
+    "#0969DA",
+    "#0A3069"
   ],
   "darkMode": {
     "type": "normal",
     "backgroundColor": "#0d1117",
     "foregroundColor": "#E6EDF3",
-    "strongColor": "#D29922",
+    "strongColor": "#4493F8",
     "weakColor": "#9198A1",
-    "radarColor": "#D29922",
+    "radarColor": "#4493F8",
     "contribColors": [
       "#2A313C",
-      "#4D3800",
-      "#7D5600",
-      "#BB8009",
-      "#E3B341"
+      "#0C2D6B",
+      "#1158C7",
+      "#388BFD",
+      "#79C0FF"
     ]
   }
 }

@@ -8,9 +8,9 @@
 <p align="center"><strong>I build tools for security monitoring, detection engineering, and AI evaluation.</strong></p>
 
 <p align="center">
-  <a href="#detection-engineering"><img src="https://img.shields.io/badge/Detection%20Engineering-9A6700?style=for-the-badge" alt="Jump to Detection Engineering" /></a>
-  <a href="#featured-projects"><img src="https://img.shields.io/badge/Application%20Security-9A6700?style=for-the-badge" alt="Jump to Application Security" /></a>
-  <a href="#about"><img src="https://img.shields.io/badge/AI%20Evaluation-9A6700?style=for-the-badge" alt="Jump to AI Evaluation" /></a>
+  <a href="#detection-engineering"><img src="https://img.shields.io/badge/Detection%20Engineering-0969DA?style=for-the-badge" alt="Jump to Detection Engineering" /></a>
+  <a href="#featured-projects"><img src="https://img.shields.io/badge/Application%20Security-0969DA?style=for-the-badge" alt="Jump to Application Security" /></a>
+  <a href="#about"><img src="https://img.shields.io/badge/AI%20Evaluation-0969DA?style=for-the-badge" alt="Jump to AI Evaluation" /></a>
 </p>
 
 <p align="center">
