@@ -78,11 +78,9 @@ def esc(s):
 def render(totals):
     langs = sorted(totals, key=totals.get, reverse=True)
     exact, counts = squares(totals)
-    caption = "Every language in my public repos, by amount of code"
-
-    p = [f'<text class="cap" x="0" y="16">{caption}</text>']
+    p = []
     i = 0
-    grid_y = 32
+    grid_y = 0
     for lang in langs:
         for _ in range(counts[lang]):
             col, row = i // ROWS, i % ROWS  # fill column by column, like a bar
@@ -110,10 +108,9 @@ def render(totals):
 <title id="t">{esc(alt)}</title>
 <style>
 text{{font-family:{FONT};}}
-.cap{{font-size:14px;fill:#59636E;}}
 .lg{{font-size:14px;fill:#59636E;}}
 .nm{{fill:#1F2328;font-weight:600;}}
-@media (prefers-color-scheme:dark){{.cap,.lg{{fill:#9198A1;}}.nm{{fill:#E6EDF3;}}}}
+@media (prefers-color-scheme:dark){{.lg{{fill:#9198A1;}}.nm{{fill:#E6EDF3;}}}}
 </style>
 {chr(10).join(p)}
 </svg>
