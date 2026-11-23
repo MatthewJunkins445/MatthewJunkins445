@@ -1,61 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="264" height="56" viewBox="0 0 264 56" role="img" aria-labelledby="t">
+<svg xmlns="http://www.w3.org/2000/svg" width="236" height="44" viewBox="0 0 236 44" role="img" aria-labelledby="t">
   <title id="t">Detection Engineering section</title>
-  <defs>
-    <linearGradient id="bg" x2="1" y2="1">
-      <stop stop-color="#071426"/>
-      <stop offset="1" stop-color="#201641"/>
-    </linearGradient>
-    <linearGradient id="trace" gradientUnits="userSpaceOnUse" x1="50" y1="0" x2="246" y2="0">
-      <stop stop-color="#22d3ee" stop-opacity="0"/>
-      <stop offset=".25" stop-color="#22d3ee"/>
-      <stop offset="1" stop-color="#a5f3fc" stop-opacity=".35"/>
-    </linearGradient>
-    <pattern id="grid" width="14" height="14" patternUnits="userSpaceOnUse">
-      <path d="M14 0H0V14" fill="none" stroke="#8298d6" stroke-opacity=".12"/>
-    </pattern>
-    <clipPath id="frame"><rect x="1" y="1" width="262" height="54" rx="11"/></clipPath>
-  </defs>
-  <style>
-    .sweep { opacity: 0; }
-    .trace { stroke-dasharray: 220; stroke-dashoffset: 0; }
-    @media (prefers-reduced-motion: no-preference) {
-      .trace { stroke-dashoffset: 220; animation: draw 1.4s cubic-bezier(.4,0,.2,1) 0.2s forwards; }
-      .sweep { animation: sweep 7s ease-in-out 1.6s infinite; }
-      .ping { animation: ping 3.5s ease-in-out 0.2s infinite; transform-box: fill-box; transform-origin: center; }
-      .glow { animation: glow 3.5s ease-in-out 0.2s infinite; }
-    }
-    @keyframes draw { to { stroke-dashoffset: 0; } }
-    @keyframes sweep {
-      0% { opacity: 0; transform: translateX(-40px); }
-      6% { opacity: .18; }
-      24% { opacity: .18; }
-      30%, 100% { opacity: 0; transform: translateX(264px); }
-    }
-    @keyframes ping {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: .45; transform: scale(.7); }
-    }
-    @keyframes glow {
-      0%, 100% { stroke-opacity: .55; }
-      50% { stroke-opacity: .95; }
-    }
-  </style>
-  <g clip-path="url(#frame)">
-    <rect width="264" height="56" fill="url(#bg)"/>
-    <rect width="264" height="56" fill="url(#grid)"/>
-    <rect width="4" height="56" fill="#22d3ee"/>
-    <path class="trace" d="M50 44H246" stroke="url(#trace)" stroke-width="1.6" stroke-linecap="round"/>
-    <g class="sweep" fill="#a5f3fc">
-      <rect x="0" width="40" height="56" opacity=".3"/>
-    </g>
-    <g transform="translate(30 26)">
-      <circle cx="0" cy="0" r="9" fill="none" stroke="#22d3ee" stroke-width="1.8"/>
-      <circle cx="0" cy="0" r="4.2" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-opacity=".7"/>
-      <path d="M0 -13V-10M0 10V13M-13 0H-10M10 0H13" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round"/>
-      <circle class="ping" cx="0" cy="0" r="1.8" fill="#e0f2fe"/>
-    </g>
-    <text x="52" y="31" fill="#e6edf3" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif"
-          font-size="12.5" font-weight="700" letter-spacing="1.4">DETECTION ENGINEERING</text>
+  <rect x=".75" y=".75" width="234.5" height="42.5" rx="10" fill="#0b1324" stroke="#22d3ee" stroke-opacity=".45" stroke-width="1.5"/>
+  <g transform="translate(24 22)">
+      <circle r="6.5" fill="none" stroke="#22d3ee" stroke-width="1.5"/>
+      <circle r="1.6" fill="#22d3ee"/>
+      <path d="M0 -10V-8M0 8V10M-10 0H-8M8 0H10" stroke="#22d3ee" stroke-width="1.5" stroke-linecap="round"/>
   </g>
-  <rect class="glow" x="1" y="1" width="262" height="54" rx="11" fill="none" stroke="#22d3ee" stroke-opacity=".55"/>
+  <text x="44" y="26.5" fill="#e6edf3" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif"
+        font-size="13.5" font-weight="600">Detection Engineering</text>
+  <path d="M214 18.5L217.5 22L214 25.5" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

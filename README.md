@@ -7,9 +7,9 @@
 <p align="center"><strong>I build tools for security monitoring, detection engineering, and AI evaluation.</strong></p>
 
 <p align="center">
-  <a href="#detection-engineering"><img src="./assets/badge-detection.svg" width="264" alt="Jump to Detection Engineering" /></a>
-  <a href="#featured-projects"><img src="./assets/badge-appsec.svg" width="264" alt="Jump to Application Security" /></a>
-  <a href="#about"><img src="./assets/badge-ai.svg" width="264" alt="Jump to AI Evaluation" /></a>
+  <a href="#detection-engineering"><img src="./assets/badge-detection.svg" width="236" alt="Jump to Detection Engineering" /></a>
+  <a href="#featured-projects"><img src="./assets/badge-appsec.svg" width="236" alt="Jump to Application Security" /></a>
+  <a href="#about"><img src="./assets/badge-ai.svg" width="236" alt="Jump to AI Evaluation" /></a>
 </p>
 
 <p align="center">
