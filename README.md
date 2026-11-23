@@ -1,9 +1,4 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg">
-    <img src="./assets/header-light.svg" width="793" alt="Matthew Junkins. A miniature MITRE ATT&CK matrix with two techniques highlighted: T1059.001, suspicious PowerShell, and T1110, SSH brute force.">
-  </picture>
-</p>
+<h1 align="center">Matthew Junkins</h1>
 
 <p align="center"><strong>I build tools for security monitoring, detection engineering, and AI evaluation.</strong></p>
 
@@ -63,6 +58,12 @@ My projects look at how to spot suspicious activity and make the results easier 
 | Network Security Policy Simulator<br><sub>Team capstone</sub> | A prototype for testing firewall policies and visualizing their effects. | Network simulation + Policy testing |
 
 ## Detection Engineering
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/matrix-dark.svg">
+  <img src="./assets/matrix-light.svg" width="793" alt="My detections on the MITRE ATT&CK matrix: T1059.001, suspicious PowerShell, and T1110, SSH brute force, highlighted on a miniature matrix.">
+</picture>
+
 | Detection | Data source | ATT&CK |
 |---|---|---|
 | Suspicious PowerShell execution | Sysmon → Splunk | [T1059.001](https://attack.mitre.org/techniques/T1059/001/) |
