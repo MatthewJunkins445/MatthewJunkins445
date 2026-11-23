@@ -7,9 +7,13 @@
 <p align="center"><strong>I build tools for security monitoring, detection engineering, and AI evaluation.</strong></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/B.S.%20Cyber%20Security-Shepherd%20'26-0E7490?style=for-the-badge" alt="B.S. Cyber Security, Shepherd University 2026" />
-  <img src="https://img.shields.io/badge/Workstations%20Deployed-85%2B-4338CA?style=for-the-badge" alt="85+ workstations deployed" />
-  <img src="https://img.shields.io/badge/Open%20to-SOC%20%C2%B7%20Detection%20%C2%B7%20AI%20Security-6D28D9?style=for-the-badge" alt="Open to SOC, detection, and AI security roles" />
+  <a href="#detection-engineering"><img src="https://img.shields.io/badge/Detection%20Engineering-0E7490?style=for-the-badge" alt="Jump to Detection Engineering" /></a>
+  <a href="#featured-projects"><img src="https://img.shields.io/badge/Application%20Security-4338CA?style=for-the-badge" alt="Jump to Application Security" /></a>
+  <a href="#about"><img src="https://img.shields.io/badge/AI%20Evaluation-6D28D9?style=for-the-badge" alt="Jump to AI Evaluation" /></a>
+</p>
+
+<p align="center">
+  <a href="#toolbox">Toolbox</a> · <a href="#featured-projects">Featured Projects</a> · <a href="#connect">Connect</a>
 </p>
 
 ## About
@@ -57,7 +61,7 @@ My projects look at how to spot suspicious activity and make the results easier 
 | [L.O.G.S.](https://github.com/MatthewJunkins445/L.O.G.S.)<br><sub>Network monitoring</sub> | A desktop dashboard that shows network exposure, firewall findings, and live traffic alerts in one place. | React + Tauri + FastAPI + Python |
 | Network Security Policy Simulator<br><sub>Team capstone</sub> | A prototype for testing firewall policies and visualizing their effects. | Network simulation + Policy testing |
 
-## Detections
+## Detection Engineering
 | Detection | Data source | ATT&CK |
 |---|---|---|
 | Suspicious PowerShell execution | Sysmon → Splunk | [T1059.001](https://attack.mitre.org/techniques/T1059/001/) |
