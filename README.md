@@ -78,6 +78,7 @@ Trying to learn more about Cybersecurity and Software Security. My projects look
   <img src="./profile-3d-contrib/profile-3d.svg" width="900" alt="Isometric 3D graph of my GitHub contribution history" />
 </p>
 <p align="center">
+  <img src="./profile-3d-contrib/languages.svg" width="793" alt="Every language in my public repos, by amount of code" />
 </p>
 
 ## Connect
