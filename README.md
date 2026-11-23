@@ -71,10 +71,14 @@ Trying to learn more about Cybersecurity and Software Security. My projects look
 ## Commit History
 <!--
   Regenerated daily by .github/workflows/profile-3d.yml.
-  Colors live in .github/profile-3d-settings.json (cyan -> violet, with a dark-mode palette).
+  Colors live in .github/profile-3d-settings.json (grey -> GitHub blue, with a dark-mode palette).
+  The languages chart is built by .github/scripts/languages.py in the same workflow.
 -->
 <p align="center">
   <img src="./profile-3d-contrib/profile-cyan-violet.svg" width="900" alt="Isometric 3D graph of my GitHub contribution history" />
+</p>
+<p align="center">
+  <img src="./profile-3d-contrib/languages.svg" width="793" alt="Every language in my public repos, by amount of code" />
 </p>
 
 ## Connect
