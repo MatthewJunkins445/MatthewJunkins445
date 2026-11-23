@@ -4,9 +4,7 @@
 
 <h1 align="center">Matthew Junkins</h1>
 
-<p align="center">
-  <em>I build tools for security monitoring, detection engineering, and AI evaluation.</em>
-</p>
+<p align="center"><strong>I build tools for security monitoring, detection engineering, and AI evaluation.</strong></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/B.S.%20Cyber%20Security-Shepherd%20'26-0E7490?style=for-the-badge" alt="B.S. Cyber Security, Shepherd University 2026" />
@@ -15,11 +13,10 @@
 </p>
 
 ## About
-- 🛠️ **PC Technician** @ *Dominion Energy*: Windows, network, and hardware troubleshooting; imaged and patched 85+ workstations in two weeks
-- 🤖 **AI Trainer & Model Evaluator** @ *DataAnnotation*: red-team AI models with prompt injection and jailbreak techniques, and check model claims against tests and code changes
-- 🎓 **B.S. Cyber Security & Networking** @ *Shepherd University* (May 2026)
-- 🔍 Building Splunk detections mapped to **MITRE ATT&CK** and security tooling for GitHub Actions
-- 📍 West Virginia · open to remote, hybrid, or relocation
+
+I’m a PC technician at Dominion Energy and a Cyber Security and Networking graduate from Shepherd University. I troubleshoot Windows and network issues, and write guides that help coworkers use internal AI tools.
+
+My projects look at how to spot suspicious activity and make the results easier to investigate. I also evaluate AI-generated code and reasoning by comparing the model’s claims with the test output and the code changes.
 
 ## Toolbox
 **Languages**
@@ -77,8 +74,6 @@
 </p>
 
 ## Connect
-<p>
-  <a href="https://www.linkedin.com/in/matthew-junkins-21809b268"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:mjunkins445@gmail.com"><img src="https://img.shields.io/badge/Email-mjunkins445%40gmail.com-1F2937?style=for-the-badge&logo=gmail&logoColor=white" alt="Email mjunkins445@gmail.com" /></a>
-  <a href="https://github.com/MatthewJunkins445?tab=repositories"><img src="https://img.shields.io/badge/GitHub-@MatthewJunkins445-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-</p>
+- [LinkedIn](https://www.linkedin.com/in/matthew-junkins-21809b268)
+- [Email](mailto:mjunkins445@gmail.com)
+- [GitHub](https://github.com/MatthewJunkins445?tab=repositories)
