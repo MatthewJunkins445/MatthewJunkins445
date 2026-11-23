@@ -37,9 +37,7 @@ These are the highlighted squares in the matrix above.
 
 ## Tools
 
-| Area | What I use |
-|---|---|
-| Security | Splunk, Sysmon, Wazuh, Snort, Wireshark, Semgrep, MITRE ATT&CK |
-| Languages | Python, PowerShell, JavaScript, Java, Bash |
-| Frameworks | React, FastAPI, Tauri |
-| Cloud and systems | AWS, Azure, Docker, GitHub Actions, Windows, Linux |
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/tools-dark.svg">
+  <img src="./assets/tools-light.svg" width="793" alt="Tools I use. Security: Splunk, Sysmon, Semgrep, Wazuh, Snort, Wireshark, MITRE ATT&CK. Languages: Python, PowerShell, JavaScript, Java, Bash. Frameworks: React, FastAPI, Tauri. Cloud and DevOps: AWS, Azure, Docker, GitHub Actions. Systems: Windows, Linux, Git, VS Code. Highlighted tools are used in a project or detection on this page.">
+</picture>
