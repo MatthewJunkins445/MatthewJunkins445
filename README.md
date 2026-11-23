@@ -34,12 +34,12 @@ Trying to learn more about Cybersecurity and Software Security. My projects look
 
 **Systems**
 <p>
-  <img src="https://skillicons.dev/icons?i=windows,linux,kali" alt="Windows, Linux, Kali Linux" />
+  <img src="https://skillicons.dev/icons?i=windows,linux" alt="Windows, Linux" />
 </p>
 
 **Tools**
 <p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,postman,nodejs,npm,notion,obsidian" alt="Git, GitHub, VS Code, Postman, Node.js, npm, Notion, Obsidian" />
+  <img src="https://skillicons.dev/icons?i=git,github,postman,nodejs,npm,notion,obsidian" alt="Git, GitHub, Postman, Node.js, npm, Notion, Obsidian" />
 </p>
 
 **Security**
