@@ -68,7 +68,7 @@ Trying to learn more about Cybersecurity and Software Security. My projects look
 | SSH brute-force attempts | SSH auth logs → Splunk | [T1110](https://attack.mitre.org/techniques/T1110/) |
 | Network anomaly alerts | Live traffic → [L.O.G.S.](https://github.com/MatthewJunkins445/L.O.G.S.) | — |
 
-## 3D Commit History
+## Commit History
 <!--
   Regenerated daily by .github/workflows/profile-3d.yml.
   Colors live in .github/profile-3d-settings.json (cyan -> violet, with a dark-mode palette).
