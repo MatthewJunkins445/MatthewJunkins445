@@ -14,8 +14,6 @@
 
 ## About
 
-I’m a PC technician at Dominion Energy and a Cyber Security and Networking graduate from Shepherd University. I troubleshoot Windows and network issues, and write guides that help coworkers use internal AI tools.
-
 My projects look at how to spot suspicious activity and make the results easier to investigate. I also evaluate AI-generated code and reasoning by comparing the model’s claims with the test output and the code changes.
 
 ## Toolbox
