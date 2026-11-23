@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="264" height="56" viewBox="0 0 264 56" role="img" aria-labelledby="t">
+  <title id="t">Ai Evaluation section</title>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#071426"/>
+      <stop offset="1" stop-color="#201641"/>
+    </linearGradient>
+    <linearGradient id="trace" gradientUnits="userSpaceOnUse" x1="50" y1="0" x2="246" y2="0">
+      <stop stop-color="#a78bfa" stop-opacity="0"/>
+      <stop offset=".25" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#ddd6fe" stop-opacity=".35"/>
+    </linearGradient>
+    <pattern id="grid" width="14" height="14" patternUnits="userSpaceOnUse">
+      <path d="M14 0H0V14" fill="none" stroke="#8298d6" stroke-opacity=".12"/>
+    </pattern>
+    <clipPath id="frame"><rect x="1" y="1" width="262" height="54" rx="11"/></clipPath>
+  </defs>
+  <style>
+    .sweep { opacity: 0; }
+    .trace { stroke-dasharray: 220; stroke-dashoffset: 0; }
+    @media (prefers-reduced-motion: no-preference) {
+      .trace { stroke-dashoffset: 220; animation: draw 1.4s cubic-bezier(.4,0,.2,1) 0.8999999999999999s forwards; }
+      .sweep { animation: sweep 7s ease-in-out 2.3s infinite; }
+      .ping { animation: ping 3.5s ease-in-out 0.8999999999999999s infinite; transform-box: fill-box; transform-origin: center; }
+      .glow { animation: glow 3.5s ease-in-out 0.8999999999999999s infinite; }
+    }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes sweep {
+      0% { opacity: 0; transform: translateX(-40px); }
+      6% { opacity: .18; }
+      24% { opacity: .18; }
+      30%, 100% { opacity: 0; transform: translateX(264px); }
+    }
+    @keyframes ping {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .45; transform: scale(.7); }
+    }
+    @keyframes glow {
+      0%, 100% { stroke-opacity: .55; }
+      50% { stroke-opacity: .95; }
+    }
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="264" height="56" fill="url(#bg)"/>
+    <rect width="264" height="56" fill="url(#grid)"/>
+    <rect width="4" height="56" fill="#a78bfa"/>
+    <path class="trace" d="M50 44H246" stroke="url(#trace)" stroke-width="1.6" stroke-linecap="round"/>
+    <g class="sweep" fill="#ddd6fe">
+      <rect x="0" width="40" height="56" opacity=".3"/>
+    </g>
+    <g transform="translate(30 26)">
+      <path d="M-2 -12C-1 -5 1 -3 8 -2C1 -1 -1 1 -2 8C-3 1 -5 -1 -12 -2C-5 -3 -3 -5 -2 -12Z" fill="none" stroke="#a78bfa" stroke-width="1.7" stroke-linejoin="round"/>
+      <path class="ping" d="M8 4C8.4 6.6 9.2 7.4 11.8 7.8C9.2 8.2 8.4 9 8 11.6C7.6 9 6.8 8.2 4.2 7.8C6.8 7.4 7.6 6.6 8 4Z" fill="#e0f2fe"/>
+    </g>
+    <text x="52" y="31" fill="#e6edf3" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif"
+          font-size="12.5" font-weight="700" letter-spacing="1.4">AI EVALUATION</text>
+  </g>
+  <rect class="glow" x="1" y="1" width="262" height="54" rx="11" fill="none" stroke="#a78bfa" stroke-opacity=".55"/>
+</svg>
