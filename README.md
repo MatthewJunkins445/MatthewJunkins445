@@ -14,7 +14,7 @@
 
 ## About
 
-Trying to learn more about Cybersecurity and Software Security. My projects look at how to spot suspicious activity and make the results easier to investigate. I also evaluate AI-generated code and reasoning by comparing the model’s claims with the test output and the code changes, helping safer more secure AI generated projects.
+Trying to learn more about Cybersecurity and Software Security. My projects look at how to spot suspicious activity and make the results easier to investigate. I also evaluate AI-generated code and reasoning by comparing the model’s claims with the test output and the code changes, helping create safer more secure AI generated projects.
 
 ## Toolbox
 **Languages**
