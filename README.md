@@ -85,7 +85,3 @@ Trying to learn more about Cybersecurity and Software Security. My projects look
 <p align="center">
   <img src="./profile-3d-contrib/languages.svg" width="793" alt="Every language in my public repos, by amount of code" />
 </p>
-
-## Connect
-- [LinkedIn](https://www.linkedin.com/in/matthew-junkins-21809b268)
-- [Email](mailto:mjunkins445@gmail.com)
