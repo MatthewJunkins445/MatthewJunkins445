@@ -76,13 +76,13 @@ Trying to learn more about Cybersecurity and Software Security. My projects look
 ## Commit History
 <!--
   Regenerated daily by .github/workflows/profile-3d.yml.
-  .github/scripts/profile_3d.py draws one animated SVG that cycles between this month
-  (resets on the 1st) and this year (resets on January 1).
+  .github/scripts/profile_3d.py draws this year across the middle (resets on January 1),
+  this month zoomed in at the top right (resets on the 1st), and the radar chart bottom-left.
   Colors live in .github/profile-3d-settings.json (grey -> GitHub blue, with a dark-mode palette).
   The languages chart is built by .github/scripts/languages.py in the same workflow.
 -->
 <p align="center">
-  <img src="./profile-3d-contrib/profile-3d.svg" width="900" alt="Isometric 3D graph of my GitHub contributions, switching between this month and this year" />
+  <img src="./profile-3d-contrib/profile-3d.svg" width="900" alt="Isometric 3D graphs of my GitHub contributions this year and this month, with a radar chart of commits, issues, pull requests, reviews and repos" />
 </p>
 
 <p align="center">
