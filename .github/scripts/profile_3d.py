@@ -6,8 +6,9 @@ One still SVG, profile-3d-contrib/profile-3d.svg:
   - the radar chart (commits, issues, PRs, reviews, repos) sits bottom-left,
     with this month and this year overlaid
 
-Both calendars face the same way: weeks run top-left to bottom-right and days
-of the week bottom-left, like github-profile-3d-contrib drew it. Ranges are
+Both calendars run top-left to bottom-right: the year lays its weeks along
+that line like github-profile-3d-contrib drew it, and the month lays out each
+week as a row of days along it (Sunday at the top-left end). Ranges are
 worked out on every run, so the month starts over on the 1st and the year on
 January 1.
 
@@ -35,7 +36,7 @@ SHRINK = 0.9  # gap between bars
 YEAR_DX = W / 64
 # Month: bigger cells, in the top-right corner above the year.
 MONTH_DX = 38
-MONTH_ORIGIN = (1010, 235)  # top corner of the first week's Sunday
+MONTH_ORIGIN = (985, 235)  # top corner of the first week's Sunday
 MONTH_TITLE = (1240, 50)  # right-aligned
 YEAR_TITLE = (40, 50)
 # Radar: bottom-left corner, below the year.
@@ -164,16 +165,24 @@ def bar(x, y, dx, count, level):
             f'<polygon class="r{level}" points="{pts(right)}"/>')
 
 
-def calendar_svg(days, dx, origin):
-    """Isometric calendar: week w, weekday r (Sunday = 0) at origin + (w - r, w + r) cells."""
+def calendar_svg(days, dx, origin, weeks_as_rows=False):
+    """Isometric calendar, week w and weekday r (Sunday = 0).
+
+    Default (year): weeks run top-left to bottom-right, at origin + (w - r, w + r) cells.
+    weeks_as_rows (month): each week is a row of days running top-left to
+    bottom-right, at origin + (r - w, r + w) cells, so the month's long side
+    points the same way as the year's.
+    """
     first = days[0][0]
     sunday0 = first - dt.timedelta(days=(first.weekday() + 1) % 7)
     dy = dx * TAN
     out = []
-    for d, count, level in days:  # date order is back-to-front
+    for d, count, level in days:  # date order is back-to-front in both layouts
         r = (d.weekday() + 1) % 7
         w = (d - sunday0).days // 7
-        out.append(bar(origin[0] + (w - r) * dx, origin[1] + (w + r) * dy, dx, count, level))
+        along, across = (r, w) if weeks_as_rows else (w, r)
+        out.append(bar(origin[0] + (along - across) * dx, origin[1] + (along + across) * dy,
+                       dx, count, level))
     return "".join(out)
 
 
@@ -276,7 +285,7 @@ def render(data, settings, today):
         title_svg(YEAR_TITLE, "This year", f"Jan 1 – Dec 31, {today.year}", "start"),
         title_svg(MONTH_TITLE, "This month",
                   f"{m_first:%b} {m_first.day} – {m_last:%b} {m_last.day}, {today.year}", "end"),
-        calendar_svg(calendar_days(data["month"]), MONTH_DX, MONTH_ORIGIN),
+        calendar_svg(calendar_days(data["month"]), MONTH_DX, MONTH_ORIGIN, weeks_as_rows=True),
         calendar_svg(year_days, YEAR_DX, year_origin),
         radar_svg(data["month"], data["year"]),
         footer_svg(m_total, y_total, data["stars"], data["forks"]),
