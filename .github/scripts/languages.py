@@ -14,7 +14,10 @@ import sys
 import urllib.request
 
 OUT = "profile-3d-contrib/languages.svg"
-GRAPH = "profile-3d-contrib/profile-3d.svg"
+GRAPHS = [
+    "profile-3d-contrib/profile-3d-month.svg",
+    "profile-3d-contrib/profile-3d-year.svg",
+]
 
 # GitHub linguist colors, so slices match the language pie in the 3D graph.
 COLORS = {
@@ -145,7 +148,8 @@ def main():
         totals = json.load(open(sys.argv[2]))
     else:
         totals = fetch(os.environ["USERNAME"], os.environ["GITHUB_TOKEN"])
-    strip_pie(GRAPH)
+    for graph in GRAPHS:
+        strip_pie(graph)
     if not totals:
         print("no languages found; leaving the existing chart in place")
         return
