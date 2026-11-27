@@ -77,7 +77,7 @@ Trying to learn more about Cybersecurity and Software Security. My projects look
 <!--
   Regenerated daily by .github/workflows/profile-3d.yml.
   .github/scripts/profile_3d.py draws this year across the middle (resets on January 1),
-  this month zoomed in at the top right (resets on the 1st), and the radar chart bottom-left.
+  this month zoomed in at the bottom left (resets on the 1st), and the radar chart top-right.
   Colors live in .github/profile-3d-settings.json (grey -> GitHub blue, with a dark-mode palette).
   The languages chart is built by .github/scripts/languages.py in the same workflow.
 -->

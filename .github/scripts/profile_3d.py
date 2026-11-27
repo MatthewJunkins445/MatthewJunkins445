@@ -2,8 +2,8 @@
 
 One still SVG, profile-3d-contrib/profile-3d.svg:
   - this year (Jan 1 - Dec 31) runs across the middle, top-left to bottom-right
-  - this month, zoomed in, sits in the top-right corner above it
-  - the radar chart (commits, issues, PRs, reviews, repos) sits bottom-left,
+  - this month, zoomed in, sits in the bottom-left corner below it
+  - the radar chart (commits, issues, PRs, reviews, repos) sits top-right,
     with this month and this year overlaid
 
 Both calendars run top-left to bottom-right: the year lays its weeks along
@@ -34,13 +34,14 @@ SHRINK = 0.9  # gap between bars
 
 # Year: same geometry as github-profile-3d-contrib, which drew it before.
 YEAR_DX = W / 64
-# Month: bigger cells, in the top-right corner above the year.
+# Month: bigger cells, in the bottom-left corner below the year.
 MONTH_DX = 38
-MONTH_ORIGIN = (985, 235)  # top corner of the first week's Sunday
-MONTH_TITLE = (1240, 50)  # right-aligned
+MONTH_ORIGIN = (260, 545)  # top corner of the first week's Sunday
+MONTH_TITLE = (30, 790)  # under the month's lower-left edge
 YEAR_TITLE = (40, 50)
-# Radar: bottom-left corner, below the year.
-RADAR_C, RADAR_R = (235, 600), 125
+# Radar: top-right corner, above the year; its key sits in the corner.
+RADAR_C, RADAR_R = (1020, 265), 150
+RADAR_KEY = (1240, 40)  # right edge, baseline
 
 RADAR_AXES = [
     ("Commit", "totalCommitContributions"),
@@ -225,8 +226,8 @@ def radar_svg(month, year):
         out.append(f'<text class="fg" x="{x:.1f}" y="{y:.1f}" font-size="16" text-anchor="{anchor}">{label}</text>')
     out.append(f'<polygon class="radar-year" stroke-linejoin="round" points="{shape(year)}"/>')
     out.append(f'<polygon class="radar-month" stroke-linejoin="round" points="{shape(month)}"/>')
-    # legend, under the chart
-    lx, ly = RADAR_C[0] - 120, RADAR_C[1] + RADAR_R + 52
+    # key, in the corner above the chart (about 258px wide)
+    lx, ly = RADAR_KEY[0] - 258, RADAR_KEY[1]
     out.append(f'<rect class="radar-year" x="{lx}" y="{ly - 12}" width="24" height="14" rx="3"/>'
                f'<text class="fg" x="{lx + 32}" y="{ly}" font-size="16">This year</text>'
                f'<line class="radar-month" x1="{lx + 130}" y1="{ly - 5}" x2="{lx + 160}" y2="{ly - 5}"/>'
@@ -236,7 +237,7 @@ def radar_svg(month, year):
 
 def footer_svg(month_total, year_total, stars, forks):
     y = H - 20
-    x0 = 420  # left of where the year's last weeks reach the bottom edge
+    x0 = 465  # right of the month, left of where the year's last weeks reach the bottom
     out = [f'<text x="{x0}" y="{y}" text-anchor="end" class="strong" font-size="32" '
            f'font-weight="bold">{month_total}</text>'
            f'<text x="{x0 + 10}" y="{y}" class="fg" font-size="20">this month</text>',
@@ -284,7 +285,7 @@ def render(data, settings, today):
         f'<rect class="bg" width="{W}" height="{H}"/>',
         title_svg(YEAR_TITLE, "This year", f"Jan 1 – Dec 31, {today.year}", "start"),
         title_svg(MONTH_TITLE, "This month",
-                  f"{m_first:%b} {m_first.day} – {m_last:%b} {m_last.day}, {today.year}", "end"),
+                  f"{m_first:%b} {m_first.day} – {m_last:%b} {m_last.day}, {today.year}", "start"),
         calendar_svg(calendar_days(data["month"]), MONTH_DX, MONTH_ORIGIN, weeks_as_rows=True),
         calendar_svg(year_days, YEAR_DX, year_origin),
         radar_svg(data["month"], data["year"]),
