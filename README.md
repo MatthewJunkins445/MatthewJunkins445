@@ -76,23 +76,14 @@ Trying to learn more about Cybersecurity and Software Security. My projects look
 ## Commit History
 <!--
   Regenerated daily by .github/workflows/profile-3d.yml.
-  Month view resets on the 1st of each month, year view on January 1.
+  .github/scripts/profile_3d.py draws one animated SVG that switches between this month
+  (resets on the 1st) and this year (resets on January 1).
   Colors live in .github/profile-3d-settings.json (grey -> GitHub blue, with a dark-mode palette).
   The languages chart is built by .github/scripts/languages.py in the same workflow.
 -->
-<details open>
-<summary><strong>This month</strong></summary>
 <p align="center">
-  <img src="./profile-3d-contrib/profile-3d-month.svg" width="900" alt="Isometric 3D graph of my GitHub contributions this month" />
+  <img src="./profile-3d-contrib/profile-3d.svg" width="900" alt="Isometric 3D graph of my GitHub contributions, switching between this month and this year" />
 </p>
-</details>
-
-<details>
-<summary><strong>This year</strong></summary>
-<p align="center">
-  <img src="./profile-3d-contrib/profile-3d-year.svg" width="900" alt="Isometric 3D graph of my GitHub contributions this year" />
-</p>
-</details>
 
 <p align="center">
   <img src="./profile-3d-contrib/languages.svg" width="793" alt="Every language in my public repos, by amount of code" />

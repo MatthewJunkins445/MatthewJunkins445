@@ -14,12 +14,8 @@ import sys
 import urllib.request
 
 OUT = "profile-3d-contrib/languages.svg"
-GRAPHS = [
-    "profile-3d-contrib/profile-3d-month.svg",
-    "profile-3d-contrib/profile-3d-year.svg",
-]
 
-# GitHub linguist colors, so slices match the language pie in the 3D graph.
+# GitHub linguist colors.
 COLORS = {
     "Python": "#3572A5", "JavaScript": "#f1e05a", "TypeScript": "#3178c6",
     "CSS": "#663399", "HTML": "#e34c26", "Rust": "#dea584", "Shell": "#89e051",
@@ -120,36 +116,11 @@ text{{font-family:{FONT};}}
 """
 
 
-def strip_pie(path):
-    """Remove the 3D graph's language pie; this chart replaces it.
-
-    github-profile-3d-contrib has no setting to hide the pie. It draws it as a
-    top-level <g transform="translate(40, ...)">, so drop that group.
-    """
-    import re
-    import xml.etree.ElementTree as ET
-    if not os.path.exists(path):
-        return
-    ET.register_namespace("", "http://www.w3.org/2000/svg")
-    ET.register_namespace("xlink", "http://www.w3.org/1999/xlink")
-    tree = ET.parse(path)
-    root = tree.getroot()
-    pies = [g for g in root
-            if g.tag.endswith("}g") and re.match(r"translate\(40,", g.get("transform", ""))]
-    for g in pies:
-        root.remove(g)
-    if pies:
-        tree.write(path, encoding="unicode")
-    print(f"removed {len(pies)} pie group(s) from {path}")
-
-
 def main():
     if len(sys.argv) == 3 and sys.argv[1] == "--from-json":
         totals = json.load(open(sys.argv[2]))
     else:
         totals = fetch(os.environ["USERNAME"], os.environ["GITHUB_TOKEN"])
-    for graph in GRAPHS:
-        strip_pie(graph)
     if not totals:
         print("no languages found; leaving the existing chart in place")
         return
