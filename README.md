@@ -76,26 +76,14 @@ Trying to learn more about Cybersecurity and Software Security. My projects look
 ## Commit History
 <!--
   Regenerated daily by .github/workflows/profile-3d.yml.
-  .github/scripts/profile_3d.py draws this month (resets on the 1st), this year
-  (resets on January 1) and the tab buttons.
-  The two <details> share a name, so opening one tab closes the other. The buttons sit
-  in <picture> so GitHub doesn't turn them into links to the image.
+  .github/scripts/profile_3d.py draws one animated SVG that cycles between this month
+  (resets on the 1st) and this year (resets on January 1).
   Colors live in .github/profile-3d-settings.json (grey -> GitHub blue, with a dark-mode palette).
   The languages chart is built by .github/scripts/languages.py in the same workflow.
 -->
-<details name="commit-graph" open>
-<summary><picture><img src="./profile-3d-contrib/tab-month.svg" height="40" alt="This month" /></picture></summary>
 <p align="center">
-  <img src="./profile-3d-contrib/profile-3d-month.svg" width="900" alt="Isometric 3D graph of my GitHub contributions this month" />
+  <img src="./profile-3d-contrib/profile-3d.svg" width="900" alt="Isometric 3D graph of my GitHub contributions, switching between this month and this year" />
 </p>
-</details>
-
-<details name="commit-graph">
-<summary><picture><img src="./profile-3d-contrib/tab-year.svg" height="40" alt="This year" /></picture></summary>
-<p align="center">
-  <img src="./profile-3d-contrib/profile-3d-year.svg" width="900" alt="Isometric 3D graph of my GitHub contributions this year" />
-</p>
-</details>
 
 <p align="center">
   <img src="./profile-3d-contrib/languages.svg" width="793" alt="Every language in my public repos, by amount of code" />
