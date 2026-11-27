@@ -39,9 +39,9 @@ MONTH_DX = 38
 MONTH_ORIGIN = (260, 545)  # top corner of the first week's Sunday
 MONTH_TITLE = (30, 790)  # under the month's lower-left edge
 YEAR_TITLE = (40, 50)
-# Radar: top-right corner, above the year; its key sits in the corner.
+# Radar: top-right corner, above the year. Filled shape = this year,
+# dashed outline = this month.
 RADAR_C, RADAR_R = (1020, 265), 150
-RADAR_KEY = (1240, 40)  # right edge, baseline
 
 RADAR_AXES = [
     ("Commit", "totalCommitContributions"),
@@ -226,12 +226,6 @@ def radar_svg(month, year):
         out.append(f'<text class="fg" x="{x:.1f}" y="{y:.1f}" font-size="16" text-anchor="{anchor}">{label}</text>')
     out.append(f'<polygon class="radar-year" stroke-linejoin="round" points="{shape(year)}"/>')
     out.append(f'<polygon class="radar-month" stroke-linejoin="round" points="{shape(month)}"/>')
-    # key, in the corner above the chart (about 258px wide)
-    lx, ly = RADAR_KEY[0] - 258, RADAR_KEY[1]
-    out.append(f'<rect class="radar-year" x="{lx}" y="{ly - 12}" width="24" height="14" rx="3"/>'
-               f'<text class="fg" x="{lx + 32}" y="{ly}" font-size="16">This year</text>'
-               f'<line class="radar-month" x1="{lx + 130}" y1="{ly - 5}" x2="{lx + 160}" y2="{ly - 5}"/>'
-               f'<text class="fg" x="{lx + 168}" y="{ly}" font-size="16">This month</text>')
     return "".join(out)
 
 
