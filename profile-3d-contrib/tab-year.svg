@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="48" viewBox="0 0 200 48" role="img" aria-labelledby="title">
+<title id="title">This year</title>
+<style>
+* { font-family: "Ubuntu", "Helvetica", "Arial", sans-serif; }
+.fg { fill: #1F2328; }
+.bg { fill: #ffffff; }
+.strong { fill: #0969DA; }
+.weak { fill: #59636E; }
+.ring { fill: none; stroke: #59636E; }
+.icon { fill: none; stroke: #1F2328; }
+.pill { fill: #0969DA; fill-opacity: 0.1; stroke: #0969DA; stroke-width: 2px; }
+.radar { fill: #0969DA; fill-opacity: 0.5; stroke: #0969DA; stroke-width: 4px; }
+.t0 { fill: rgb(216, 222, 228); } .l0 { fill: rgb(181, 186, 192); } .r0 { fill: rgb(151, 155, 160); }
+.t1 { fill: rgb(182, 227, 255); } .l1 { fill: rgb(153, 191, 214); } .r1 { fill: rgb(127, 159, 178); }
+.t2 { fill: rgb(84, 174, 255); } .l2 { fill: rgb(71, 146, 214); } .r2 { fill: rgb(59, 122, 178); }
+.t3 { fill: rgb(9, 105, 218); } .l3 { fill: rgb(8, 88, 183); } .r3 { fill: rgb(6, 74, 153); }
+.t4 { fill: rgb(10, 48, 105); } .l4 { fill: rgb(8, 40, 88); } .r4 { fill: rgb(7, 34, 74); }
+@media (prefers-color-scheme: dark) {
+.fg { fill: #E6EDF3; }
+.bg { fill: #0d1117; }
+.strong { fill: #4493F8; }
+.weak { fill: #9198A1; }
+.ring { fill: none; stroke: #9198A1; }
+.icon { fill: none; stroke: #E6EDF3; }
+.pill { fill: #4493F8; fill-opacity: 0.1; stroke: #4493F8; stroke-width: 2px; }
+.radar { fill: #4493F8; fill-opacity: 0.5; stroke: #4493F8; stroke-width: 4px; }
+.t0 { fill: rgb(42, 49, 60); } .l0 { fill: rgb(35, 41, 50); } .r0 { fill: rgb(29, 34, 42); }
+.t1 { fill: rgb(12, 45, 107); } .l1 { fill: rgb(10, 38, 90); } .r1 { fill: rgb(8, 31, 75); }
+.t2 { fill: rgb(17, 88, 199); } .l2 { fill: rgb(14, 74, 167); } .r2 { fill: rgb(12, 62, 139); }
+.t3 { fill: rgb(56, 139, 253); } .l3 { fill: rgb(47, 117, 213); } .r3 { fill: rgb(39, 97, 177); }
+.t4 { fill: rgb(121, 192, 255); } .l4 { fill: rgb(102, 161, 214); } .r4 { fill: rgb(85, 134, 178); }
+}
+</style>
+<rect class="pill" x="1" y="1" width="198" height="46" rx="23.0"/><text x="100.0" y="31.0" class="strong" font-size="20" font-weight="bold" text-anchor="middle">This year</text>
+</svg>
